@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /* Warm ivory / cream — page & section backgrounds */
+  --color-ivory: #fbf7ef;
+  --color-cream: #f2e8d7;
+  --color-sand: #e4d6bd;
+
+  /* Deep earthy brown — dark sections, footer, headings on light bg */
+  --color-brown: #3a2618;
+  --color-brown-800: #4c3320;
+
+  /* Charcoal — body copy */
+  --color-charcoal: #2a2420;
+  --color-charcoal-soft: #5c534a;
+
+  /* Terracotta — primary accent (buttons, fills) */
+  --color-terracotta: #c1633a;
+  --color-terracotta-dark: #9a4c2c;
+  --color-terracotta-soft: #f3e0d3;
+
+  /* Muted saffron — secondary accent */
+  --color-saffron: #d99a44;
+  --color-saffron-soft: #f7ead2;
+
+  /* Subtle green accent */
+  --color-green: #6e7f5c;
+  --color-green-soft: #e6ead9;
+
+  /* Legacy tokens kept so nothing referencing them breaks. */
+  --color-brand-50: #f3e0d3;
+  --color-brand-100: #f7ead2;
+  --color-brand-400: #d99a44;
+  --color-brand-500: #c1633a;
+  --color-brand-600: #c1633a;
+  --color-brand-700: #9a4c2c;
+  --color-accent: #9a4c2c;
+  --color-accent-dark: #7a3b21;
+  --color-secondary: #6e7f5c;
+  --color-ink: #3a2618;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.motif-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.motif-divider::before,
+.motif-divider::after {
+  content: "";
+  height: 1px;
+  width: 2.5rem;
+  background: var(--color-sand);
+}
