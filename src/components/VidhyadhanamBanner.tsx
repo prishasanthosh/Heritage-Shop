@@ -1,6 +1,6 @@
 import { BookHeart, BookOpen, HandHeart } from "lucide-react";
 
-const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "http://localhost:8080";
+const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "https://indianheritager.org";
 
 export function VidhyadhanamBanner() {
   return (

@@ -6,7 +6,7 @@ import { useCart } from "../context/CartContext";
 import { useCategories } from "../hooks/useCategories";
 import logo from "../assets/logo.png";
 
-const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "http://localhost:8080";
+const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "https://indianheritager.org";
 
 export function Navbar() {
   const { user, logout } = useAuth();

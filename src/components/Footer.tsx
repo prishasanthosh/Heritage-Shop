@@ -31,7 +31,7 @@ function YoutubeIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "http://localhost:8080";
+const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "https://indianheritager.org";
 
 export function Footer() {
   const [email, setEmail] = useState("");

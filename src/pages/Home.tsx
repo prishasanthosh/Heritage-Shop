@@ -11,7 +11,7 @@ import { ImpactCounter } from "../components/ImpactCounter";
 import { VidhyadhanamBanner } from "../components/VidhyadhanamBanner";
 import { Reveal } from "../components/Reveal";
 
-const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "http://localhost:8080";
+const MAIN_SITE_URL = import.meta.env.VITE_MAIN_SITE_URL ?? "https://indianheritager.org";
 
 const stats = [
   { value: 25000, suffix: "+", label: "Books shared" },
